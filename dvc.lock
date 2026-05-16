@@ -1,0 +1,13 @@
+schema: '2.0'
+
+stages:
+  train:
+    cmd: python train.py
+    deps:
+      - path: train.py
+        md5: 1234567890abcdef
+      - path: student.csv
+        md5: 6f5902ac237024bdd0c176cb93063dc4
+    outs:
+      - path: best_model.pkl
+        md5: abcdef1234567890
